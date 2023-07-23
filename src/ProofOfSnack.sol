@@ -5,14 +5,14 @@ import "openzeppelin-contracts/contracts/token/ERC721/extensions/ERC721URIStorag
 import "openzeppelin-contracts/contracts/utils/Counters.sol";
 import "openzeppelin-contracts/contracts/access/Ownable.sol";
 
-contract Tummy is ERC721URIStorage, Ownable {
+contract ProofOfSnack is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter public _tokenIds;
 
     // Base URI required to interact with IPFS
     string private _baseURIExtended;
 
-    constructor() ERC721("Tummy", "TUM") {
+    constructor() ERC721("ProofOfSnack", "POS") {
         _setBaseURI("ipfs://");
     }
 
